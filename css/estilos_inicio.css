@@ -67,9 +67,9 @@
     }
     
 }
-header h2{
-    font-size: 3.5vh;    
-}
+/* header h2 {
+    font-size: 1rem;    
+} */
 header h2 a:hover{
     color: black;
         
@@ -83,7 +83,7 @@ header{
     top: 0;
     display: flex;
     justify-content: space-between;
-    align-items:end;
+    align-items:center;
 }
 
 header ul{
@@ -95,10 +95,9 @@ header ul{
 
 
 header nav {
-	width:100%;
+	width:70%;
 	display:flex;
 	flex-wrap:wrap;
-	align-items:end;
     justify-content: flex-end;
 }
 
