@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+/*Header Contacto*/
+
+header{
+    background-color: rgba(80, 164, 63, 0.8);
+    padding: 1rem 2rem;
+    position: fixed;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem .1rem;
+}
+
+header .logo a {
+	line-height:50px;
+}
+
+header nav {
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:end;
+    justify-content: flex-end;
+}
+
+header nav a {
+	background:#c0392b;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+
+	/* Flexbox */
+	flex-grow:1;
+}
+
+header nav a:hover {
+	background:#e74c3c;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+header a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+
+header a:focus{
+    color: red;
+}
+
+.name{
+    font-size: 100%;
+    color: #f9f9f9;
+    font-weight: bold;
+    text-align:center;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 5px;
+    border-color:rgb(230, 16, 38);
+    padding: 1.3rem;
+    animation-duration: 5s;
+    animation-name: slidein;
+    background: linear-gradient(45deg,rgb(13, 83, 195),rgb(45, 45, 232),rgb(27, 100, 203),rgb(27, 2, 96));
+	background-size: 400% 400%;
+	position: relative;
+	animation: cambiar 5s ease-in-out infinite;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+#logo{
+    width: 80%;
+    height: 10rem;
+    border-style: solid;
+    border-width: 4px;
+    border-color:rgb(250, 4, 28);
+    border-radius: 8px;
+}
+
+/*Main Contacto*/
+
+main {
+    background-color: rgb(249, 247, 245);
+
+}
+
+.btn-active {
+    background-color: rgba(8, 206, 93, 0.788);
+    box-shadow: 3px 3px 3px 2px rgba(231, 239, 106, 0.989);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    color: rgb(241, 244, 215);
+    font-weight: bold;
+}
+
+.btn-nav {
+    background-color: rgba(16, 38, 239, 0.829);
+    box-shadow: 3px 3px 3px 2px rgb(255, 80, 238);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    color:#1e10e0;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: rgb(232, 51, 51);
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+}
+
+main section{
+    padding: 2rem;
+}
+
+#extra{
+    display: none;
+}
+
+#main_title{
+    margin: 1rem 0;
+}
+
+#articles_section1{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card_main_logo{
+    background-color: rgb(242, 239, 202);
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 15px;
+    border-color:rgb(230, 16, 38) ;
+    padding: 5% 30%;
+}
+
+.realice_consulta{
+    font-size: 1rem;
+    font-family: 'Nunito', 'Nunito Sans', sans-serif;
+    color: #e9901c;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 2rem;
+}
+
+label{
+    font-size: 15px;
+    font-family: 'Nunito', 'Nunito Sans', sans-serif;
+    font-weight:lighter;
+    padding: .8rem;
+}
+
+::placeholder{
+    font-size: 15px;
+    font-family: 'Nunito', 'Nunito Sans', sans-serif;
+    font-weight:lighter;
+    
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    align-content:flex-end;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.titulo_como_llegar{
+    font-size: 1rem;
+    font-family: 'Nunito', 'Nunito Sans', sans-serif;
+    color: #e9901c;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 2rem;
+}
+
+.lineas_que_te_acercan, h4, p{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+
+
+
+/*Footer Contacto*/
+
+footer {
+    min-height: 3vh;
+}
+
+.iconosFooter {
+    width: 1rem;
+    margin: .5rem;
+}
+
+footer{
+    background-color: rgb(130, 236, 109);
+    
+}
+
+footer section{
+    padding: 3rem;
+    max-height: 8rem;
+}
+
+footer h2{
+    margin: 1rem 0;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem .3rem;
+}
+
+footer a{
+    color: #040012;
+}
+
+#footer_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer_info section{
+    height: 1rem;
+}
+
+#copyright_section{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+.btn_btn-lg_btn-primary_back-to-top{
+    scroll-behavior: smooth;
+    color: #1e10e0;
+}
+
+@media screen and (min-width:501px) {
+    .name{
+        font-size: 250%;
+    }
+}
+
+@media screen and (min-width:501px) {
+    #logo{
+        width: 100%;
+        height: 23rem;
+    }
+}
+
+@media screen and (min-width: 424px) {
+    header ul{
+        column-gap: 1rem;
+    }
+    #extra{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:551px) {
+    #footer_info{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width:461px) {
+    .iconosFooter{
+        width: 2rem;
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .realice_consulta{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .titulo_como_llegar{
+        font-size: 2rem;
+    }
+}
+
+@media screen and  (min-width:501px) {
+    label{
+      font-size: 20px;
+      font-family: 'Nunito', 'Nunito Sans', sans-serif;
+      font-weight:lighter;
+      padding: 1rem;
+    }
+}
+
+@media screen and  (min-width:501px) {
+    ::placeholder{
+      font-size: 20px;
+      font-family: 'Nunito', 'Nunito Sans', sans-serif;
+      font-weight:lighter;
+    }
+}
