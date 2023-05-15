@@ -163,14 +163,8 @@ header a:focus{
     /* border: #1ff3d0 solid 5px; */
     display: flex;
     font-size: 18px;
-
 }
 
-@media(max-width:1200px) {
-    .box-about {
-        flex-direction: column;
-    }
-}
 
 .box-img {
     /* border: #b30000 solid 5px; */
@@ -193,6 +187,13 @@ header a:focus{
     text-align: center;
     background-color: #d4d667;
     padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media(max-width:1200px) {
+    .box-about {
+        flex-direction: column;
+    }
 }
 
 .box-text p{
