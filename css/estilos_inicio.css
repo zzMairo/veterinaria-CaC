@@ -363,7 +363,45 @@ html{
     display: none;
 }
 
+/* ################--API--################# */
+.img-api-size{
+    width: 100%;
+    height: 300px;
+}
+.container-api{
+/*     border: 2px solid black; */
+    display: block;
+    background-color: rgb(236, 231, 163);
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 7rem auto ;
+}
 
-
+.button-api{
+    background-color: #c0392b;
+    border-radius: 15%;
+    border: none;
+    padding: .5rem;
+    margin: 1rem;
+}
+#image-api{
+  /*   border: 3px solid rgb(248, 11, 11); */
+    display: block;
+    padding: 1rem 2rem;
+}
+.datos-can{
+/*     border: 5px solid rgb(14, 235, 6); */
+    padding: 0;
+    text-align:start;
+    
+}
+.datos-can h1 {
+    align-content: space-around;
+    
+}
+.datos-can h1 span{
+    font-weight: normal;
+}
 
 
