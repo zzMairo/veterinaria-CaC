@@ -8,7 +8,17 @@
 #menu,#menu-check{
     display: none;
 }
-@media(max-width:915px) {
+
+header nav {
+    width:70%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:end;
+    justify-content: flex-end;
+    /* align-content: center; */
+}
+
+@media(max-width:947px) {
     
     #menu-check:not(:checked)~ nav{
         display: none;
@@ -88,17 +98,6 @@ header ul{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem .1rem;
-}
-
-
-header nav {
-    width:70%;
-	display:flex;
-	flex-wrap:wrap;
-	align-items:end;
-    justify-content: flex-end;
-    /* align-content: center; */
-
 }
 
 header nav a {
@@ -426,6 +425,7 @@ footer {
     min-height: 3vh;
     display: block;
     
+    
 }
 
 .iconosFooter {
@@ -442,7 +442,7 @@ footer{
 footer section{
     padding: 1rem;
     /* max-height: 8rem; */
-}
+} 
 
 footer h1{
     margin: .5rem 0;
@@ -454,6 +454,7 @@ footer ul{
     flex-wrap: wrap;
     /* gap: 3rem .3rem;  */
     justify-content: center;
+    padding: 0;
     
 }
 
@@ -498,6 +499,7 @@ footer a{
         
     }
 }
+
 .visually-hidden{
     display: none;
 }
