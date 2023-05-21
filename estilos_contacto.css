@@ -380,3 +380,38 @@ footer a{
       font-weight:lighter;
     }
 }
+
+#mensajeNombre{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeApellido{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeEmail{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeAsunto{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeMensaje{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}

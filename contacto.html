@@ -64,26 +64,31 @@
                </section>
             </section>
 
-           <form action="#" method="get">
+           <form action="#" id="formulario" name="formulario" method="get">
             
                 <legend class="realice_consulta">Realice su consulta</legend>
 
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Juan">
+                <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Juan" >
+                <p id="mensajeNombre"></p>
 
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Perez">
+                <input type="text" id="apellido" name="apellido" maxlength="30" placeholder="Perez">
+                <p id="mensajeApellido"></p>
 
                 <label for="email">Mail</label>
                 <input type="email" id="email" name="email" placeholder="juanperez@gmail.com">
+                <p id="mensajeEmail"></p>
 
                 <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+                <input type="text" id="asunto" name="asunto" maxlength="30" placeholder="Asunto">
+                <p id="mensajeAsunto"></p>
 
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aqui..." maxlength="350"></textarea>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="350" placeholder="Escriba su mensaje aqui..."></textarea>
+                <p id="mensajeMensaje"></p>
 
-                <input type="submit" id="enviar" value="Enviar">
+                <input type="submit" id="enviar" name="enviar" value="Enviar">
              
            </form>
 
@@ -152,7 +157,7 @@
 <!-- Back to Top -->
 <a href="#" class="btn_btn-lg_btn-primary_back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-
+<script src="./js/contacto.js"></script>
 
 </body>
 
