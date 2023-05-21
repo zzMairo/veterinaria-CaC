@@ -5,6 +5,12 @@
     font-family: Nunito Sans;
     font-size: 18px;
 }
+header nav {
+	width:70%;
+	display:flex;
+	flex-wrap:wrap;
+    justify-content: flex-end;
+}
 #menu,#menu-check{
     display: none;
 }
@@ -94,12 +100,7 @@ header ul{
 }
 
 
-header nav {
-	width:70%;
-	display:flex;
-	flex-wrap:wrap;
-    justify-content: flex-end;
-}
+
 
 header nav a {
 	background:#c0392b;
