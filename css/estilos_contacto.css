@@ -108,6 +108,16 @@ main {
 
 }
 
+.btn-active {
+    background-color: rgba(8, 206, 93, 0.788);
+    box-shadow: 3px 3px 3px 2px rgba(231, 239, 106, 0.989);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    color: rgb(241, 244, 215);
+    font-weight: bold;
+}
+
 .btn-nav {
     background-color: rgba(16, 38, 239, 0.829);
     box-shadow: 3px 3px 3px 2px rgb(255, 80, 238);
@@ -254,14 +264,11 @@ textarea {
 
 footer {
     min-height: 3vh;
-    display: block; /* agrege esto */
 }
 
 .iconosFooter {
-    /* width: 1rem;
-    margin: .5rem; */
-    width: 3rem;
-    margin: 1rem;
+    width: 1rem;
+    margin: .5rem;
 }
 
 footer{
@@ -270,8 +277,8 @@ footer{
 }
 
 footer section{
-    padding: 1rem;
-    /* max-height: 8rem; */
+    padding: 3rem;
+    max-height: 8rem;
 }
 
 footer h2{
@@ -282,8 +289,7 @@ footer ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 3rem .3rem; */
-    justify-content: center;    /* agrege esto */
+    gap: 3rem .3rem;
 }
 
 footer a{
@@ -297,7 +303,7 @@ footer a{
 }
 
 #footer_info section{
-    height: 2rem;
+    height: 1rem;
 }
 
 #copyright_section{
@@ -305,6 +311,7 @@ footer a{
     padding: 1rem;
     margin-bottom: 0;
 }
+
 .btn_btn-lg_btn-primary_back-to-top{
     scroll-behavior: smooth;
     color: #1e10e0;
@@ -335,17 +342,16 @@ footer a{
 @media screen and (min-width:551px) {
     #footer_info{
         justify-content: space-evenly;
-        
     }
 }
-/* comente esto M */
-/* @media screen and (min-width:461px) {
+
+@media screen and (min-width:461px) {
     .iconosFooter{
         width: 2rem;
         margin: 1rem;
     }
 }
- */
+
 @media screen and (min-width:501px) {
     .realice_consulta{
         font-size: 2rem;
@@ -376,4 +382,39 @@ footer a{
 }
 .visually-hidden{
     display: none;
+}
+
+#mensajeNombre{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeApellido{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeEmail{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeAsunto{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
+}
+
+#mensajeMensaje{
+    font-size: 1.2rem;
+    font-family:monospace;
+    color: red;
+    padding: 1rem;
 }
