@@ -2,11 +2,80 @@
 *{
     font-family: 'Nunito', 'Nunito Sans', sans-serif;
     margin: 0;
-    
+    font-size: 18px;
 }
 /* ********BARRA DE NAVEGACION************ */
+#menu,#menu-check{
+    display: none;
+}
 
+header nav {
+    width:70%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:end;
+    justify-content: flex-end;
+    /* align-content: center; */
+}
 
+@media(max-width:947px) {
+    
+    #menu-check:not(:checked)~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+    #menu{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: rgba(32, 170, 92, 0.877);
+        border:  3px solid black;
+        border-radius: 5px;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        z-index: 100;
+    }
+    #menu:hover{
+        color: rgba(32, 170, 92, 0.877);
+        background-color: #040012;
+    }
+    #menu-cloced{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-open{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cloced{
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 800%;
+        background-color: rgb(0, 0, 0);
+        padding-top: 0.5rem;
+        padding-right: 1.5rem;
+        opacity: 0.8;
+        z-index: 1;
+        width: 100%;
+    }
+    header nav .btn-nav{
+        border: 0;
+        box-shadow: none;
+        background: none;
+    }
+    header nav ul li{
+        margin: 1rem;
+    }
+    header nav ul{
+        display: block;
+        text-align: right;
+    }   
+}
 header h2 a:hover{
     color: black;
         
@@ -21,6 +90,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
+    
 }
 
 header ul{
@@ -28,17 +98,6 @@ header ul{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem .1rem;
-}
-
-
-header nav {
-    width:100%;
-	display:flex;
-	flex-wrap:wrap;
-	align-items:end;
-    justify-content: flex-end;
-    align-content: center;
-    
 }
 
 header nav a {
@@ -94,7 +153,7 @@ header a:focus{
 
 .container {
     /* border: #000 solid 5px; */
-    margin: 7rem;
+    margin: 5rem 7rem;
     display: flex;
     
 }
@@ -103,14 +162,8 @@ header a:focus{
     /* border: #1ff3d0 solid 5px; */
     display: flex;
     font-size: 18px;
-
 }
 
-@media(max-width:1200px) {
-    .box-about {
-        flex-direction: column;
-    }
-}
 
 .box-img {
     /* border: #b30000 solid 5px; */
@@ -133,6 +186,13 @@ header a:focus{
     text-align: center;
     background-color: #d4d667;
     padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media(max-width:1200px) {
+    .box-about {
+        flex-direction: column;
+    }
 }
 
 .box-text p{
@@ -154,11 +214,15 @@ header a:focus{
 
 .text-primary {
     color: #28a745;
+    font-size: 50px;
 }
 
 .text-secondary {
     color: #fd7e14;
-
+    font-size: 50px;
+}
+.size-check-double {
+    font-size: 20px;
 }
 @media(max-width:320px) {
     .container {
@@ -361,6 +425,7 @@ footer {
     min-height: 3vh;
     display: block;
     
+    
 }
 
 .iconosFooter {
@@ -377,7 +442,7 @@ footer{
 footer section{
     padding: 1rem;
     /* max-height: 8rem; */
-}
+} 
 
 footer h1{
     margin: .5rem 0;
@@ -389,6 +454,7 @@ footer ul{
     flex-wrap: wrap;
     /* gap: 3rem .3rem;  */
     justify-content: center;
+    padding: 0;
     
 }
 
@@ -433,6 +499,7 @@ footer a{
         
     }
 }
+
 .visually-hidden{
     display: none;
 }
